@@ -1,0 +1,67 @@
+\chapter{GitHub}
+\section{¿Qué es Git y GitHub?}
+Git es un sistema de control de versiones, el cual registra los cambios realizados en un archivo, recuperar sus versiones antiguas, compara cambios en el tiempo y permite saber quién modificó los archivos por última vez. Se diferencia de otros sistemas de control de versiones debido al manejo de sus datos, ya que Git elabora un conjunto de copias instantáneas de un sistema de archivos miniatura. Es decir, Git toma una imagen del estado actual de sus archivos y almacena una referencia a esa instantánea cada vez que confirmas un cambio (commit) o guarda el estado de proyecto.\\
+Por otro lado, GitHub es una plataforma que incorpora las características del sistema de control de versiones de Git. GitHub es conocido por ser el mayor proveedor de alojamiento de repositorios Git. Además, es el punto de encuentro de los desarrolladores para colaborar entre sí para sus proyectos.
+
+\section{Creación de cuenta en GitHub}
+Para tener una cuenta en GitHub, diríjase a su página web (https://github.com/) y haga click en "sign up" para completar sus datos. Tendrá que elegir un nombre de usuario, escribir su correo, de preferencia correo institucional, y crear una contraseña. Luego se le enviará un correo de verificación a la dirección brindada. Ahora, si se registró con un correo institucional, puede tener una cuenta GitHub Pro gratis para estudiantes. Para ello, debe acceder a su página web (https://education.github.com), hacer click en "sign in" y completar los datos solicitados para verificar que es un estudiante.
+
+\section{Instalación de Git y GitHub Desktop}
+\subsection{Instalación de Git}
+La instalación de Git es sencilla. Solo es necesario ir a su página de descargas (https://git-scm.com/downloads), elegir su sistema operativo y descargarlo en la carpeta de su preferencia.
+
+\vspace{0.5cm}
+\includegraphics[scale=0.94]{imagenes/3.png}
+\vspace{0.05cm}
+
+\subsection{Instalación de GitHub Desktop}
+GitHub Desktop es la interfaz gráfica de usuario (GUI) de GitHub. Permite utilizar la mayoría de comandos de Git desde la computadora de escritorio con confirmaciones visuales de los cambios (GitHub, s.f.). Asimismo, es útil para subir, extraer y clonar repositorios remotos, así como para trabajar de manera colaborativa.\\
+Descargue GitHub Desktop a través de su página web (https://desktop.github.com/). Una vez que lo tenga instalado, haga click en "Sign in to GitHub.com" para ingresar las credenciales de su cuenta ya creada.\\
+
+\section{Trabajar con GitHub y GitHub Desktop}
+\begin{itemize}
+\item \textbf{Crear repositorios}: "un repositorio contiene todos los archivos de tu proyecto y el historial de revisiones de cada uno de ellos"  (GitHub, s.f.). Para crear un repositorio, ubíquese en la esquina superior izquierda, haga click en el símbolo ``+'' y seleccione ``New repository''.
+
+\vspace{0.5cm}
+\includegraphics[scale=0.94]{imagenes/git2.png}
+\vspace{0.05cm}
+
+Ahora, asígnele un nombre a su repositorio. En este caso, se llamará ``Experimentos''. Adicionalmente, puede añadir una descripción opcional de su repositorio, elegir si desea que este sea público o privado y añadir un README file (archivo Markdown). Esto último es una descripción extensa del proyecto.
+
+\item \textbf{Colaborar en un repositorio}: si desea trabajar con otras personas en su proyecto, puede añadirlas al repositorio para que contribuyan en él. Para ello, diríjase a ``Settings'', luego a ``Collaborators'' y en ``Add people'' agregué los nombres de los usuarios de GitHub de sus compañeros.
+
+\vspace{0.5cm}
+\includegraphics[width=\textwidth]{imagenes/git5.png}
+\vspace{0.05cm}
+
+\item \textbf{Clonar un repositorio}: hasta el momento, se tiene un repositorio remoto en GitHub.com. En caso quisiera trabajar desde su computadora, puede clonar el repositorio, lo que significa crear una copia local. Esto permite sincronizar los cambios del proyecto entre las dos ubicaciones. Puede clonar su propio repositorio o el de otra persona para contribuir en un proyecto.\\
+Para clonar un repositorio, haga click en ``<> Code'' de la imagen anterior. Luego, clicar el botón verde ``Code'' y seleccione ``Open with GitHub Desktop''
+
+\vspace{0.5cm}
+\includegraphics[scale=0.5]{imagenes/git6.png}
+\vspace{0.05cm}
+
+Le aparecerá un aviso para abrir GitHubDesktop. Luego, cambie el directorio de trabajo actual por la ubicación donde alojará el repositorio clonado. 
+
+\item \textbf{Crear ramas (branches)}: un repositorio tiene predeterminado la rama principal (main). Si se tiene colaboradores en el repositorio, lo óptimo es que cada uno cree una rama individual. Esta es una bifurcación del repositorio, la cual permite aislar su trabajo de la rama principal (main). De esta manera, puede realizar los cambios que considere necesarios sin afectar el trabajo de los demás. Para crear una rama en GitHub Desktop, diríjase a ``Current branch'' y en ``Filter'' escriba el nombre de su rama, luego cliquee en ``New branch''. Después, al lado derecho le aparecerá ``Publish branch''en vez de ``Fetch origin''. Deberá hacer click ahí para publicar su rama. Recuerde verificar siempre que se encuentre en su rama al momento de trabajar. Si quisiera cambiar de rama, notará que los archivos de su carpeta clonada cambian, ya que esos corresponden al trabajo de su compañero. Por otra parte, no olvidar hacer click en ``Fetch origin'' de vez en cuando para actualizar el estado de todas las ramas.
+
+\vspace{0.5cm}
+\includegraphics[width=\textwidth]{imagenes/git8.png}
+\vspace{0.05cm}
+
+\item \textbf{Fusionar cambios desde un branch}: ahora que ya tiene un branch, supongamos que agrega un nuevo archivo a la carpeta clonada y desea fusionar los cambios a la rama principal. A modo de ejemplo, como se observa en la imagen de abajo, el branch creado se llama ``Ursula1'' y se añadió un archivo de Python al directorio donde se aloja el repositorio clonado. A partir de ese momento, cualquier cambio en el código se registra en GitHub. Si añade, elimina o modifica líneas de código se identificará como un cambio. En este caso, se observan dos cambios fundamentales, el primero corresponde al nuevo archivo agregado a la carpeta y el segundo a los cambios en las líneas de código. Si desea eliminar alguno de esos cambios, seleccione el cambio específico, haga anticlick y elija ``Discard changes''.\\
+Ahora que está seguro de los cambios, proceda a confirmarlos con un ``commit''. Usualmente, los commits se utilizan para indicar modificaciones significativas. En la imagen se observa que el nombre elegido para el commit es ``new\_commit''. Después, haga click en el botón azul ``Commit to (nombre del branch)''.
+
+\vspace{0.5cm}
+\includegraphics[width=10cm,height=8cm]{imagenes/git9.png}
+\vspace{0.05cm}
+
+Ahora, deberá hacer click en el botón azul ``Push origin''.
+%\item \textbf{Subir archivos}: existe
+
+\end{itemize}
+
+\section{Comandos Git más utilizados}
+\begin{itemize}
+    \item \textbf{Git}
+\end{itemize}
